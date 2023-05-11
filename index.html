@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Міський парк "Сосновий бір"</title>
+        <link rel="stylesheet" href="./main4.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+		<script>
+            function countLetters() {
+			   var text_area = document.querySelector('textarea');
+			   var str = text_area.value
+			   var all_letters = str.length;
+
+				for(var i=0, upper=0, lower=0, digits=0, symbols=0, char; i < all_letters; i++) {
+				char = str.charAt(i);
+
+					if (!isNaN(char * 1)){
+					digits++;
+					}
+					else if("<>@!#$%^&*()_+[]{}?:;|'\"\\,./~`-=".indexOf(char) != -1) {
+					symbols++;
+					}	
+					else if (char == char.toUpperCase()) {
+					upper++;
+					}
+					else if (char == char.toLowerCase()){
+					lower++;
+					}
+				}
+				let h1 = document.querySelector('#h1');
+                let h2 = document.querySelector('#h11');
+				
+				h1.innerHTML=upper;
+				h2.innerHTML=lower;
+		
+            }
+        </script>
+    </head>
+    <body>
+    <header>
+        <div class="header">
+               <h2 class="header-title"></h2>
+                <p class="header-subtitle">Міський парк "Сосновий бір</p>
+            <a href="#container"  class="header-arrow">
+                <img src="./img/header/chevron-down.svg.svg" alt="Arrow">
+            </a>
+        </div> 
+    </header> 
+    <main>    
+        <div class="portfolio">
+            <div class="container"  id="container">
+                    
+                   <h2 class="portfolio-header">Портфоліо</h2>
+                   <!--portfolio-cards-wrapper-->
+                <div class="portfolio-cards-wrapper">
+                        <!--Card-->
+                        <div class="card"> 
+                            <a href="./page1/index.html" class="card-link">
+                                <img class="card-img" src="./img/portfolio/forrest_street.jpg" ali="Многостраничный сайт">
+                                <h3 class="card-title">Сосновий бір</h3>
+                                <p>Верстка многосторінкового файла</p>
+                            </a>    
+                        </div>  
+                    <!--//Card-->
+                    <!--Card-->
+                        <div class="card"> 
+                            <a href="./page2/mermaid.html" class="card-link">
+                                <img class="card-img" src="./img/portfolio/mermaid.jpg" ali="Многостраничный сайт">
+                                <h3 class="card-title"> Композиція "Русалка"</h3>
+                                <p>Верстка многосторінкового файла</p>
+                            </a>    
+                        </div>  
+                    <!--//Card-->
+                    <!--Card-->
+                        <div class="card"> 
+                            <a href="./page3/bridge.html" class="card-link">
+                                <img class="card-img" src="./img/portfolio/bridge.jpg" ali="Многостраничный сайт">
+                                <h3 class="card-title">Мост кохання</h3>
+                                <p>Верстка многосторінкового файла</p>
+                            </a>    
+                        </div>  
+                     <!--//Card-->
+                     <!--Card-->
+                        <div class="card"> 
+                            <a href="./page4/air-ball.html" class="card-link">
+                                <img class="card-img" src="./img/portfolio/air-ball.JPG" ali="Многостраничный сайт">
+                                <h3 class="card-title">Долина троянд</h3>
+                                <p>Верстка многосторінкового файла</p>
+                            </a>    
+                        </div>  
+                    <!--//Card-->
+                </div> 
+                <!--//portfolio-cards-wrapper-->
+            </div>
+        </div>
+    </main>  
+		<body>
+			<textarea name="" id="" cols="70" rows="1">
+			</textarea>
+			<h3 >Великі букви:</h3>
+			<h2 id="h1">...</h2>
+			<h3>Mаленьки букви:</h>
+			<h2 id="h11">...</h2>
+			<button onclick="countLetters()">Натисніть тут</button>
+		</body>
+        <!--Footer-->
+    <footer class="footer">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-copyright">
+                       <div class="footer-copyright-name"> Ліла Олександр</div>
+                       <p>HTML верстка и разробка сайтів</p>
+                    </div>
+                    <div class="footer-icons">
+                        <p>Мої профілі в соціальних сітях</p>
+                        <div class="footer-icons-row">
+                            <a href="#">
+                                <img src="./img/icons/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/facebook.svg" alt="">
+                            </a>
+                           
+                            <a href="#">
+                                <img src="./img/icons/linkedin.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/icons/github.svg" alt="">
+                            </a>
+                        </div>  
+						
+                    </div>
+					
+                    <div class="footer-contacts">
+                        <a href="#" class="footer-button">
+                            Зв'язок в інстаграм
+                        </a>
+                        <p>Фотографії використані з публічного сайту https://rest.guru.ua/cherkassy/places/</p>
+                    </div>
+                </div>
+            </div>
+            
+    </footer>   
+
+          
+    </body>
+</html>
